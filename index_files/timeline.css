@@ -4,10 +4,12 @@
 
 .card {
     &.green {
-        background-color: #023641;
+        /*background-color: #023641;*/
+        background-image: linear-gradient(#023641, #060C30);
     }
     &.blue {
-        background-color: #060C30;
+        /*background-color: #060C30;*/
+        background-image: linear-gradient(#060C30, #023641);
     }
     &.green,&.blue {
         border-color: #EFCA6F;
@@ -15,6 +17,15 @@
         color: #fff;
         .card-title {
             color: #EFCA6F;
+        }
+    }
+    .card-body {
+        .datetime {
+            background-color: #EFCA6F;
+            color: #023641;
+            padding: 0 0.5rem;
+            border-radius: 5px;
+            font-weight: bold;
         }
     }
 }
