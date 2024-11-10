@@ -1,4 +1,70 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
-body {
-  padding-top: 3.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Mrs+Saint+Delafield&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  body {
+    padding-top: 3.5rem;
+    .navbar-dark .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    nav {
+      background-color: #023641;
+      border-bottom: 5px solid #EFCA6F;
+      a.navbar-brand {
+        color: #EFCA6F !important;
+        font-family: "Lavishly Yours", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .navbar-nav .nav-link {
+        color: #fff !important;
+        &:hover {
+          color: #EFCA6F !important;
+        }
+      }
+    }
+
+    main {
+      .jumbotron {
+        background-color: #060C30;
+        border-bottom: 5px solid #EFCA6F;
+        background-image: url(../images/confetti.png), linear-gradient(#060C30, #023641);
+        background-position: left top;
+        background-repeat: repeat-x;
+        background-size: contain;
+        margin-bottom: 0;
+        h1 {
+          color: #EFCA6F;
+        }
+        p {
+          color: #fff;
+          a.btn-primary {
+            border: 2px solid #EFCA6F;
+            background-color: #023641;
+            color: #fff;
+          }
+          a.btn-secondary {
+            border: 2px solid #EFCA6F;
+            background-color: #EFCA6F;
+            color: #060C30;
+          }
+        }
+      }
+
+      .container.time {
+        margin-top: 2rem;
+      }
+    }
+
+    footer {
+      background-color: #023641;
+      color: #EFCA6F;
+      .container {
+        p {
+          padding: 1rem 0;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
