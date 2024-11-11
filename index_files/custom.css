@@ -4,17 +4,32 @@ html {
   scroll-behavior: smooth;
   body {
     padding-top: 3.5rem;
-    .navbar-dark {
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-      }
+
+    .cursive {
+      font-family: "Lavishly Yours", cursive;
     }
+
+    a.btn-primary {
+      border: 2px solid #EFCA6F;
+      background-color: #023641;
+      color: #fff;
+    }
+    a.btn-secondary {
+      border: 2px solid #EFCA6F;
+      background-color: #EFCA6F;
+      color: #060C30;
+    }
+
     nav {
       background-color: #023641;
       border-bottom: 5px solid #EFCA6F;
+      &.navbar-dark {
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+      }
       a.navbar-brand {
         color: #EFCA6F !important;
-        font-family: "Lavishly Yours", cursive;
         font-weight: 400;
         font-style: normal;
       }
@@ -40,28 +55,33 @@ html {
         }
         p {
           color: #fff;
-          a.btn-primary {
-            border: 2px solid #EFCA6F;
-            background-color: #023641;
-            color: #fff;
-          }
-          a.btn-secondary {
-            border: 2px solid #EFCA6F;
-            background-color: #EFCA6F;
-            color: #060C30;
-          }
         }
       }
 
       
-      #time, #map, #gift, #rsvp {
-        scroll-margin-top: 4.5rem;
+      #time, #map, #gift {
+        scroll-margin-top: 60px;
+      }
+
+      .section-heading {
+        font-size: 5rem;
       }
 
       #time {
-        margin-top: 2rem;
-        font-family: "Lavishly Yours", cursive;
-        font-size: 5rem;
+        background-color: #EEEDDB;
+        h2 {
+          /*margin-top: 2rem;*/
+          background-color: #EFCA6F;
+          color: #060C30;
+        }
+      }
+
+      #map {
+        background-color: #023641;
+        color: #fff;
+        h2 {
+          color: #EFCA6F;
+        }
       }
     }
 
