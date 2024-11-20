@@ -99,10 +99,10 @@ html {
       @media (min-width: 768px) {
          #address span {
           display:block;
+        }
       }
-     }
     }
-  
+  }
 
     footer {
       background-color: #023641;
