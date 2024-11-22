@@ -13,11 +13,21 @@ html {
       border: 2px solid #EFCA6F;
       background-color: #023641;
       color: #fff;
+      &:hover {
+        border: 2px solid #EFCA6F;
+        background-color: #EFCA6F;
+        color: #060C30;
+      }
     }
     a.btn-secondary {
       border: 2px solid #EFCA6F;
       background-color: #EFCA6F;
       color: #060C30;
+      &:hover {
+      border: 2px solid #EFCA6F;
+      background-color: #023641;
+      color: #fff;
+      }
     }
 
     nav {
@@ -68,6 +78,11 @@ html {
       }
 
       #time {
+        margin-bottom: -2rem;
+        padding-bottom: 2rem;
+      }
+
+      #time, #gift {
         background-color: #EEEDDB;
         h2 {
           /*margin-top: 2rem;*/
@@ -82,8 +97,33 @@ html {
         h2 {
           color: #EFCA6F;
         }
+        .map-responsive {
+          overflow:hidden;
+          padding-bottom:50%;
+          position:relative;
+          height:0;
+      }
+      .map-responsive iframe{
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position: absolute;
+          padding-bottom: 3rem;
+      }
+      @media (min-width: 768px) {
+         #address span {
+          display:block;
+        }
       }
     }
+
+    #gift {
+      .row {
+        padding: 2rem 0;
+      }
+    }
+  }
 
     footer {
       background-color: #023641;
