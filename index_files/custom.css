@@ -13,11 +13,21 @@ html {
       border: 2px solid #EFCA6F;
       background-color: #023641;
       color: #fff;
+      &:hover {
+        border: 2px solid #EFCA6F;
+        background-color: #EFCA6F;
+        color: #060C30;
+      }
     }
     a.btn-secondary {
       border: 2px solid #EFCA6F;
       background-color: #EFCA6F;
       color: #060C30;
+      &:hover {
+      border: 2px solid #EFCA6F;
+      background-color: #023641;
+      color: #fff;
+      }
     }
 
     nav {
@@ -68,6 +78,11 @@ html {
       }
 
       #time {
+        margin-bottom: -2rem;
+        padding-bottom: 2rem;
+      }
+
+      #time, #gift {
         background-color: #EEEDDB;
         h2 {
           /*margin-top: 2rem;*/
@@ -100,6 +115,12 @@ html {
          #address span {
           display:block;
         }
+      }
+    }
+
+    #gift {
+      .row {
+        padding: 2rem 0;
       }
     }
   }
