@@ -65,6 +65,12 @@ html {
         }
         p {
           color: #fff;
+          @media (min-width: 768px) {
+             span#intro {
+              display:block;
+            }
+          }
+        }
         }
       }
 
