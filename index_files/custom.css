@@ -13,7 +13,7 @@ html {
       border: 2px solid #EFCA6F;
       background-color: #023641;
       color: #fff;
-      &:hover {
+      &:hover, &:active {
         border: 2px solid #EFCA6F;
         background-color: #EFCA6F;
         color: #060C30;
@@ -23,7 +23,7 @@ html {
       border: 2px solid #EFCA6F;
       background-color: #EFCA6F;
       color: #060C30;
-      &:hover {
+      &:hover, &:active {
       border: 2px solid #EFCA6F;
       background-color: #023641;
       color: #fff;
