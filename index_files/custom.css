@@ -9,7 +9,12 @@ html {
       font-family: "Lavishly Yours", cursive;
     }
 
-    a.btn-primary {
+    @media screen and (max-width:390px) {
+      a.btn {
+        margin-bottom: 1rem;
+      }
+    }
+    a.btn-primary, button.btn-primary {
       border: 2px solid #EFCA6F;
       background-color: #023641;
       color: #fff;
@@ -19,7 +24,7 @@ html {
         color: #060C30;
       }
     }
-    a.btn-secondary {
+    a.btn-secondary, button.btn-secondary {
       border: 2px solid #EFCA6F;
       background-color: #EFCA6F;
       color: #060C30;
@@ -71,6 +76,27 @@ html {
             }
           }
         }
+        #displayInvite {
+          .modal-header {
+            background-color: #023641;
+            color: #EFCA6F;
+            border-bottom: none;
+            .close {
+              color: #fff;
+            }
+          }
+          .modal-body {
+            background-image: linear-gradient(#023641, #060C30);
+            img#invite {
+              border: 2px solid #EFCA6F;
+              width: 100%;
+              height: auto;
+            }
+          }
+          .modal-footer {
+            background-color: #060C30;
+            border-top: none;
+          }
         }
       }
 
@@ -91,7 +117,6 @@ html {
       #time, #gift {
         background-color: #EEEDDB;
         h2 {
-          /*margin-top: 2rem;*/
           background-color: #EFCA6F;
           color: #060C30;
         }
@@ -100,6 +125,7 @@ html {
       #map {
         background-color: #023641;
         color: #fff;
+        padding-bottom: 2rem;
         h2 {
           color: #EFCA6F;
         }
@@ -108,18 +134,15 @@ html {
           padding-bottom:50%;
           position:relative;
           height:0;
-      }
-      .map-responsive iframe{
+          min-height: 250px;
+        }
+        .map-responsive iframe{
           left:0;
           top:0;
           height:100%;
           width:100%;
           position: absolute;
           padding-bottom: 3rem;
-      }
-      @media (min-width: 768px) {
-         #address span {
-          display:block;
         }
       }
     }
@@ -129,17 +152,17 @@ html {
         padding: 2rem 0;
       }
     }
-  }
+  } 
+}
 
-    footer {
-      background-color: #023641;
-      color: #EFCA6F;
-      .container {
-        p {
-          padding: 1rem 0;
-          margin: 0;
-        }
-      }
+footer {
+  background-color: #023641;
+  color: #EFCA6F;
+  .container {
+    p {
+      padding: 1rem 0;
+      margin: 0;
     }
   }
 }
+
